@@ -1,0 +1,24 @@
+mutation {
+  createProductos(datos: {
+    nombre: "Escuadra",
+    precio: 20,
+    foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Squadra_45.jpg/640px-Squadra_45.jpg"
+  }) {
+    id
+  }
+}
+
+query {
+  getProductos {
+    id
+    nombre
+    precio
+  }
+}
+
+mutation {
+  deleteProductos {
+    id
+    nombre
+  }
+}
